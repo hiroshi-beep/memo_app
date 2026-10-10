@@ -1,0 +1,6 @@
+{
+  "name": "MemoPad - 高機能メモ＆ノートアプリ",
+  "description": "直感的な操作性と美しいデザイン、タグ整理・高速検索・Markdown＆チェックリスト対応のモダンなメモアプリ。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Zen Maru Gothic', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    letter-spacing: 0.01em;
+  }
+}
+
+/* Cute pastel subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 114, 182, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 114, 182, 0.45);
+}
+
+/* Markdown preview prose styling with cute friendly styling */
+.markdown-body h1 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #831843;
+}
+
+.dark .markdown-body h1 {
+  color: #fbcfe8;
+}
+
+.markdown-body h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 1.15rem;
+  margin-bottom: 0.6rem;
+  color: #9d174d;
+}
+
+.dark .markdown-body h2 {
+  color: #f472b6;
+}
+
+.markdown-body h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #be185d;
+}
+
+.dark .markdown-body h3 {
+  color: #fb7185;
+}
+
+.markdown-body p {
+  margin-bottom: 0.85rem;
+  line-height: 1.8;
+}
+
+.markdown-body ul {
+  list-style-type: '🌸 ';
+  padding-left: 1.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.4rem;
+  line-height: 1.7;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid #f472b6;
+  background: rgba(253, 242, 248, 0.6);
+  padding: 0.75rem 1rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: #701a75;
+  font-style: normal;
+  margin: 1rem 0;
+}
+
+.dark .markdown-body blockquote {
+  border-left-color: #ec4899;
+  background: rgba(131, 24, 67, 0.2);
+  color: #fbcfe8;
+}
+
+.markdown-body pre {
+  background: #2e1065;
+  color: #f5f3ff;
+  padding: 0.9rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  margin: 1rem 0;
+}
+
+.markdown-body code:not(pre code) {
+  background: rgba(244, 114, 182, 0.15);
+  color: #be185d;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}
+
+.dark .markdown-body code:not(pre code) {
+  background: rgba(244, 114, 182, 0.25);
+  color: #fbcfe8;
+}
+
+.markdown-body hr {
+  border: none;
+  border-top: 1.5px dashed #fbcfe8;
+  margin: 1.5rem 0;
+}
+
+.dark .markdown-body hr {
+  border-top-color: #831843;
+}
+
